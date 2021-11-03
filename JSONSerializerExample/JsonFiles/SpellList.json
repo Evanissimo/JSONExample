@@ -1,0 +1,612 @@
+{
+	"spells": 
+	[
+		{
+		"Name": "blessing",
+		"Level": 1,
+		"Range" : "self or touch",
+		"Duration ": "1 turn or more",
+		"Casting Time" : "1 action or more", 
+		"Save": "N/A",
+		"IsCleric": true,
+		"General": "The cleric beseeches the blessing of his god. If bewstowed, this blessing can be a great boon to the success of his endeavors. The spell can be cast on the cleric himself, on an object, or on one of the cleric's allies. This spell is most effective on allies with the same alignment. Casting this spell on a target with a different alignment incurs a -1 penalty to the spell check, and casting the spell on a target with an opposite alignment or in alleigance to an opposed deity incurs a -2 penalty. The casting time reflects prayer and meditation as the cleric uses his holy symbol to conduct the blessing ritual. Blessings cast under auspicious circumstances receive a bonus of +1 to +4, according to the judge's discretion. Such circumstances include casting in the temple of the cleric's god, casting on a sacred holiday, or casting with the use of a holy relic. Likewise, casting under the inauspicious circumstances, such as in an unholy enemy temple, receives a penalty from -1 to -4",
+		"Manifestation":
+		{
+			"Die": 4,
+			"1": "the target glows",
+			"2": "the target is limned in a brilliant aura",
+			"3": "target manifests an angelic crown",
+			"4": "the heavenly host sings softly when the blessing is present",
+		},
+		"Corruption": null,
+		"Misfire": null,
+		"Effects": 
+		[  
+					{
+						"min": 0,
+						"max": 11,
+						"effectDescription": "failure",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 12,
+						"max": 13,
+						"effectDescription": "When Cast on Self: A god's favor grants success to a cleric's efforts. He receives a +1 bonus to all attack rolls for 1 turn. When Cast on Ally: The ally receives a + 1 bonus to all attack rolls for 1 round. When Cast on Object: Failure",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 14,
+						"max": 17,
+						"effectDescription": "When Cast on Self: The cleric receives a +1 bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks for 1 turn  When Cast on Ally: The ally receives a +1 bonus to all attack rolls for 1 turn  When Cast on Object: The cleric can bless a vial of liquid to create holy water. The holy water does 1d4 damage when splashed upon unholy creatures. It remains holy for 1 day, as long as it is used in the service of the cleric's deity.",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 18,
+						"max": 19,
+						"effectDescription": "When Cast on Self: The cleric receives a +2 bonus to all attack rolls, damage rolls, saving throws, skill checks, and spellchecks for 1 turn. When Cast on Ally: The ally receives a +1 bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks for 1 turn.  When Cast on Object: The cleric can create holy water (as result 14-17 above) or bless a small amulet. The amulet is considered holy and magical for the duration of the spell, which is 1 day. The amulet grants its wearer a +1 bonus to the saving throws, as long as it is used in the service of the cleric's deity. ",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 20,
+						"max": 23,
+						"effectDescription": "When Cast on Self: The cleric receives a bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus is equal to 1d3+CL(rolled at the time of casting) and lasts for 1 turn. In addition, the cleric radiates a holy auria. Allies within 5' also recieve the same blessing, as long as they remain within the aura.  When Cast on Ally: The ally receives a +2 bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks for 1 turn. When Cast on Object: The cleric can create holy water (as result 14-17 above), a holy amulet(as result 18-19 above), or bless a weapon. A blessed weapon grants a +1 bonus to all attack and damage rolls or a +2 bonust to attack and damage rolls against unholy creatures. The weapon remains holy for 1 day and is considered magical. ",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 24,
+						"max": 27,
+						"effectDescription": "When Cast on Self: The cleric receives a bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus is equal to 1d3+CL (rolled at time of casting) and lasts for 1 turn. In addition, the cleric radiates a holy aura. Allies within 10’ receive the same blessing as long as they remain within the aura.  When Cast on Ally: The ally receives a bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus is equal to 1d3+CL (rolled at time of casting) and lasts for 1 turn.  When Cast on Object: The cleric can create holy water, a holy amulet, or a holy weapon, as above with the following changes:holy water remains potent permanently, holy amulets grant a +2 bonus, and holy weapons grant a +2 or +3 bonus. However, the cleric asks much of his deity and loses the ability to cast this spell for the remainder of the day ",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 28,
+						"max": 29,
+						"effectDescription": "When Cast on Self: The cleric radiates an aura of exquisite holiness. All allies within 30' of the caster receive a blessing that grants a +4 bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus lasts for one hour.  When Cast on Ally: The ally receives a bonus to all attack rolls, damage rolls, saving throwas, skill checks, and spell checks. The bonus is equal to 1d3+CL (rolled at the time of casting) and lasts for 1 turn. In addition, the ally radiates a holy aura. Allies within 5' of the ally receive the same blessing as long as they remain within the aura. When Cast on Object: The cleric can create holy water, a holy amulet, or a holy weapon, as above with the following changes: holy water remains potent permanently, holy amulents grant a +2 bonus for one month. THe cleric asks much of his deity and loses the ability to cast this spell again for 1d7+1 days.",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 30,
+						"max": 31,
+						"effectDescription": "When Cast on Self: At this level of power, the blessing applies to the cleric and to an enterprise he serves in the name of his deity. This can be a n army, a mission to liberate a princess, a castle, a sea voyage to new lands, or other such endeavors. The judge's discretion governs this power. All persons involved in the enterprise with the cleric receive a +1 bonus to all activities associated with the enterprise with the cleric receive a +1 bonus to all activities associated with the enterprise, as long as it remains in the service of the cleric's deity. In addition, the cleric can designate a number of individuals equal to his CL who receive an expanded bonus of +CL to all activites associated with the enterprise. The bonus lasts for 7 days. This is such a mighty drain of strength the cleric loses the ability to cast this spell for the same 7 days. If at any point the cleric falls out of favor with his deity, the blessing is revoked. The blessing is magical in nature and can be dispelled temporarily.   When Cast on Ally: The ally receives a bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus is equal to 1d3+CL (rolled at time of casting) and lasts for 1 turn. In addition the ally radiates a holy aura. Allies within 10' of the ally receive the same blessing as long as they remain within the aura.  When Cast on Object: The cleric can create holy water, a holy amulet, or a holy weapon, as above, with the following changes: holy water remains potent permanently, holy amulets grant a +2 bonus for one year, and holy weapons grant a +2 or +3 bonus for one year. The cleric asks much of his deity and loses the ability to cast this spell again for 1d4 weeks.",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					},
+					{
+						"min": 32,
+						"max": 1000,
+						"effectDescription": "When Cast on Self: At this level of power, the blessing applies to the cleric and to an enterprise he serves in the name of his deity. Moreover, the blessing bestowed to an ongoing enterprise is permanent, as long as it is favored by the cleric’s deity, until either the completion of the enterprise or its dissolution. Note that there is a “reasonableness factor” in the deity’s granting of this blessing. Attempting to abuse the definition of a “permanent enterprise” risk a deity’s wrath. The enterprise can be a pilgrimage to a distant shrine, an army with a certain holy goal, a mission to liberate a princess, a sea voyage to encounter new lands, or other such endeavors. All persons involved in the enterprise with the cleric receive a +1 bonus to all activities associated with the enterprise, as long as it remains in the service of the cleric’s deity. In addition, the cleric can designate a number of individuals equal to his CL who receive an expanded bonus of +CL to all activities associated with the enterprise. This is such a mighty drain of strength the cleric loses the ability to cast this spell for 1d20+10 days. If at any point the cleric falls out of favor with his deity, the blessing is revoked. The blessing is magical in nature and can be dispelled temporarily. When Cast on Ally: The ally receives a bonus to all attack rolls, damage rolls, saving throws, skill checks, and spell checks. The bonus is equal to 1d3+CL (rolled at time of casting) and lasts for 1 turn. In addtition, the ally radiates a holy aura. Allies withing 20' of the ally receive the same blessing as long as they remain within the aura.  When Cast on Object: The cleric can create holy water, a holy amulet or a holy weapon, as above with the following changes: holy water remains potent permanently, holy amulets grant a +2 bonus permanently, and holy weapons grant a +2 or +3 bonus permanently. The duration is increased to permanent as long as the object remains in the service of the cleric's deity; if the object is used for an unholy purpose, its magic is revoked and forever lost. The cleric asks much of his deity and loses the ability to cast this spell again for 1d4 months.",
+						"lost": false,
+						"worse": false,
+						"roll": null,
+					}
+		]
+		},
+		{
+			"name": "Animal Summoning",
+			"level": 1,
+			"range": "20'",
+			"Duration": "Varies",
+			"Casting Time": "1 round",
+			"Save": "None",
+			"IsCleric": false,
+			"General": "The caster invokes animal spirits to summon forth a mundane animal. The caster must be familiar with the animal type and have some material remnant to expend in the casting the spell(e.g., hair, fur,paw,tooth,skull,etc.).",
+			"Manifestation":
+			{
+				"Die": 4,
+				"1": "an egg shimmers into existence, then hatches into the animal summoned",
+				"2": "a flash of dark clouds and the animal appears",
+				"3": "the animal's skeleton appears first, then organs appear then muscles knit them together, then skin grows, and the animal appears",
+				"4": "animal erupts from the ground fully formed"
+			},
+			"Corruption":
+			{
+				"Die": 8,
+				"1": "wizard takes on minor facial trait of the animal he attempted to summon, such as whiskers, longer ears, cat eyes, etc;",
+				"2": "wizard emits an odor which humans find strange but animals find irresistible",
+				"3": "minor corruption",
+				"4": "minor corruption",
+				"5": "minor corruption",
+				"6": "major corruption",
+				"7": "major corruption",
+				"8": "greater corruption"
+				
+			},
+			"Misfire":
+			{
+				"Die": 4,
+				"1": "caster inadvertently summons a swarm of aggravating insects, such as bees, wasps, or locusts",
+				"2": "instead of summoning an animal, the caster inadvertently sends one away: The caster's familiar or the next-closest mundane vanishes for 1d4 rounds only to return dirty, wet, and angry",
+				"3": "caster summons only part of an animal, causing a pile of bloody rabbit ears, severed goat horns, dislocated wolf legs, or bloody viscera to appear",
+				"4": "caster correctly summons an animal but incorrectly places it inside a nearby building or terrain feature, or on the floor/ground if there is no other nearby feature, the animal dies instantly and its body is difficult to recover now that it is fused with the object"
+			},
+			"Effects":
+			[
+				{
+					"min":0
+					"max":1
+					"effectDescription":"lost, failure, and worse! Roll 1d6 modified by Luck: (0 or less) corruption + misfire + patron taint (1-2) corruption, (3)patron taint (or corruption if no patron), (4+) misfire.",
+					"lost": true,
+					"worse": true,
+					"roll": 6
+				},
+				{
+					"min":2,
+					"max":11,
+					"effectDescription":"lost. Failure.",
+					"lost": true,
+					"worse": false,
+					"roll": null
+				},				
+				{
+					"min":12,
+					"max":13,
+					"effectDescription":"The caster summons one mundane animal of 1HD or less. THe animal remains for upt to 1 hours, though it hungers, thirsts, and rests as normal. The animal obeys the caster's commands within normal bounds - suicidal commands or those contrary to its nature (e.g., ordering a rabbit to consume meat) have a 50% chance of releasing the animal from service, in which case it returns from whence it came. Due to the nature of the summoning, the caster cannot directly harm the creature summoned.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},				
+				{
+					"min":14,
+					"max":17,
+					"effectDescription": "The caster summons one mundane animal of up to 2 HD, or two animals of 1 HD or less. The animals remain for up to 1 hour, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to its nature (e.g., ordering a rabbit to consume meat) have a 50% chance of releasing the animal from service, in which case it returns from whence it came. Due to the nature of the summoning, the caster cannot directly harm the creature summoned",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},				
+				{
+					"min":18,
+					"max":19,
+					"effectDescription":"The caster summons one mundane animal of up to 2 HD, or two animals of 1 HD or less. The animals remain for up to 2 hours, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to its nature (e.g., ordering a rabbit to consume meat) have a 50% chance of releasing the animal from service, in which case it returns from whence it came. Due to the nature of the summoning, the caster cannot directly harm the creature summoned.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":20,
+					"max":23,
+					"effectDescription":"The caster summons one mundane animal of up to 4 HD, two animals of 2 HD, or up to four animals of 1 HD or less. The animals remain for up to 2 hours, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to its nature (e.g., ordering a rabbit to consume meat) have a 25% chance of releasing the animal from service, in which case it returns from whence it came. Due to the nature of the summoning, the caster cannot directly harm the creature summoned.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":24,
+					"max":27,
+					"effectDescription":"The caster summons one mundane animal of up to 8 HD, two animals of 4 HD, four animals of 2 HD, or up to eight animals of 1 HD or less. The animals remain for up to 2 hours, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to their nature (e.g., ordering a rabbit to consume meat) have a 25% chance of releasing the animals from service, in which case they return to whence they came. Due to the nature of the summoning, the caster cannot directly harm the animals summoned.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":28,
+					"max":29,
+					"effectDescription":"The caster summons one mundane animal of up to 8 HD, two animals of 4 HD, four animals of 2 HD, or up to eight animals of 1 HD or less. The animals remain for up to a day, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to their nature (e.g., ordering a rabbit to consume meat) have a 10% chance of releasing the animals from service, in which case they return to whence they came. Due to the nature of the summoning, the caster cannot directly harm the animals summoned.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":30,
+					"max":31,
+					"effectDescription":"The caster summons one mundane animal of up to 16 HD, two animals of up to 8 HD, four animals of up to 4 HD, or up to eight animals of 2 HD or less. The animals remain for up to a day, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands within normal bounds – suicidal commands or those contrary to their nature (e.g., ordering a rabbit to consume meat) have a 10% chance of releasing the animals from service, in which case they return to whence they came. Due to the nature of the summoning, the caster cannot directly harm the animals summoned",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":32,
+					"max":1000,
+					"effectDescription":"The caster summons a large group of mundane animals. This could be a herd of cattle, a pride of lions, a flock of geese, or a pack of wolves. All animals must be of the same type, and the total hit dice must be 100 HD or less. The herd remains for up to a week, though they hunger, thirst, and rest as normal. The animals obey the caster’s commands and even undertake suicidal commands or those contrary to their nature (e.g., ordering a rabbit to consume meat). Due to the nature of the summoning, the caster cannot directly harm the animals summoned",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				}
+			]
+			
+			
+		},
+		{
+			"name": "cantrip",
+			"level": 1,
+			"range": "up to 20' per caster level",
+			"Duration":"varies",
+			"Casting Time": "1 action",
+			"Save": "will vs. spell check as applicable",
+			"IsCleric": false 
+			"General": "As wizards learn their craft, they practice many minor incantations that produce simple visual or auditory effects. This spell can be used to apply magical energy to many minor tasks. With the inherent risks that come from spellcasting, few wizards are so bold as to frequnetly inovce cantrips, but their avaliability is sometimes valuable. The cantrip spell can be used to enact any effect the caster pronounces at casting, within the limits of the spell, as outlined on the spell check table below.",
+			"Manifestation":
+			{
+				"Die": null
+				"1": null
+				"2": null
+				"3": null
+				"4": null 
+			},
+			"Corruption":null,
+			"Misfire":null,
+			"Effects":
+			[
+				{
+					"min":0,
+					"max":1,
+					"effectDescription":"Lost, Falure, and misfire",
+					"lost": true,
+					"worse": false,
+					"roll": null,
+				},
+				{
+					"min":2
+					"max":11
+					"effectDescription":"Lost. Failure",
+					"lost": true,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":12,
+					"max":13,
+					"effectDescription":"The caster creates a simple visual effect at a distance of up to 20' per caster level. For example, a flash of light, dancing lights, a ray of moonlight, or a patch of darkness.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":14,
+					"max":17,
+					"effectDescription":"As above, or the caster can create a simple auditory effect at similar range. For example, a whispered sentence, enhanccing his voice to a booming shout, a fake dog bark, or basic ventriloquism",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":18,
+					"max":19,
+					"effectDescription":"As above, or the caster can create a simple kinetic effect at similar range. For example, shove a mug off a table, tear the buttons off a dress, twist a knob, or cause a deck of cards to shuffle itself",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":20,
+					"max":1000,
+					"effectDescription":"As above, or the caster can generate a dangerous fluid or energy of some kind that does up to 1d3 damage. For example, a dollop of acid or a freezing chill.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+			]
+			
+			
+		},
+		{
+			"name": "Charm Person",
+			"level": 1,
+			"range": "120'",
+			"Duration": "Varies",
+			"Casting Time": "1 round",
+			"Save": "Will vs. Check",
+			"IsCleric": false,
+			"General": "The caster charms an enemy to become a friend! Any mundane living humanoid can be affected normally. Druids can also use this spell on animals. Wizards can attempt this spell on monsters and un-dead with a -2 check penalty and attempt to affect outsiders and demons with a -4 check penalty",
+			"Manifestation": 
+			{
+				"Die": 6,
+				"1": "Flash of light",
+				"2": "lulling harmony",
+				"3": "black cloud",
+				"4": "glittering pixie dust",
+				"5": "Black beam",
+				"6": "Moonbeam from above"
+			},
+			"Corruption":
+			{
+				"Die": 6,
+				"1":"minor corruption",
+				"2":"minor corruption",
+				"3":"minor corruption",
+				"4":"major corruption",
+				"5":"major corruption",
+				"6":"greater corruption"
+			},
+			"Misfire":
+			{
+				"Die":4,
+				"1": "caster falls in love with intended target",
+				"2": "1d4 randomly determined nearby creatures fall in love with each other",
+				"3": "caster inadvertently puts intended target to sleep (Will save to resist)",
+				"4": "target is not charmed but instead repulsed and angered by the caster"
+			},
+			"Effects":
+			[
+				{
+					"min":0,
+					"max":1,
+					"effectDescription":"Lost, failure, and worse! Roll 1d6 modified by Luck: (0 or less) corruption + misfire + patron taint; (1-2) corruption; (3) patron taint (or corruption if no patron); (4+) misfire",
+					"lost": true,
+					"worse": true,
+					"roll": 6
+				},
+				{
+					"min":2,
+					"max":11,
+					"effectDescription":"Lost. Failure.",
+					"lost": true,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":12,
+					"max":13,
+					"effectDescription":"A single target must make a Will save or be dazed for 1d4 rounds. Dazed targets can move at half speed but can perform no other actions",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":14,
+					"max":17,
+					"effectDescription":"A single target must make a Will save or fall under the caster’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. Unfortunately, the target’s willpower must be forcibly subverted for the caster to exercise control, so it is but a shell of its former self, operating at a -2 penalty to all rolls, saves, checks, and ability scores while under the wizard’s control. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day. While affected by the spell, the target is marked by a sign of the caster’s control. Roll 1d4: (1) odd facial tic; (2) deep bags under eyes; (3) posture and facial expressions resemble caster; (4) hair stands straight up",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":18,
+					"max":19,
+					"effectDescription":"A single target must make a Will save or fall under the caster’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. The target is able to operate at full normal functionality while charmed. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day. While affected by the spell, the target is marked by a sign of the caster’s control, and its posture and facial expressions subtly change to resemble the caster’s.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":20,
+					"max":23,
+					"effectDescription":"The wizard can target a number of creatures equal to his caster level. Each target must make a Will save or fall under the caster’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. The target is able to operate at full normal functionality while charmed. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":24,
+					"max":27,
+					"effectDescription":"The caster can target a number of creatures equal to 1d6 + caster level. Each target must make a Will save or fall under the caster’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. The target is able to operate at full normal functionality while charmed. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":28,
+					"max":29,
+					"effectDescription":"The caster can target a number of creatures equal to 2d6 + caster level. Each target must make a Will save or fall under the caster’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. The target is able to operate at full normal functionality while charmed. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":30,
+					"max":31,
+					"effectDescription":"The caster can target a number of creatures equal to 3d6 + caster level. Targets of equal to or less HD than the caster do not receive a save. Those with greater HD than the caster must make a Will save or fall under the wizard’s complete control, as if it were his friend. However, the target will not perform actions that are suicidal or which a devoted friend would not otherwise perform. The target is able to operate at full normal functionality while charmed. The target receives another save to break the charm according to its original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":32,
+					"max":1000,
+					"effectDescription":"The caster can influence the emotions of large groups of people, including crowds of public spectators or armies of angry warriors. The caster can attempt to charm up to 100 people at once, as long as they are within his line of sight – there is no effective range limit, and the targets need not be grouped together (e.g., if the wizard is using scrying means to observe multiple armies, he can target 20 people from each army). Targets of equal to or less HD than the caster do not receive a save. Those with greater HD than the caster receive a Will save. Failure indicates the targets fall under the caster’s complete control and consider him their close friend. The targets receive another save to break the charm according to their original Intelligence, as follows: Int 3-6 = one month; Int 7-9 = three weeks; Int 10-11 = two weeks; Int 12-15= one week; Int 16-17 = three days; Int 18+ = next day.",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				}
+			]
+			
+			
+		},
+		{
+			"name": "Darkness",
+			"level": 1,
+			"range": "20' radius or more",
+			"Duration": "1 turn or more",
+			"Casting Time": "1 Action or more",
+			"Save": "N/A",
+			"IsCleric": true,
+			"General": "The cleric extinguishes the light of the sun, demonstrating the great power of his deity. From a distance, the darkness appears to be a space of deepest night; no light wil penetrate it. Creatures wthin are blinded",
+			"Manifestation": 
+			{
+				"Die": 3,
+				"1": "shadowy cloud of darkness",
+				"2": "absolute blackness",
+				"3": "thick oily black mist",
+			}
+			"Corruption":null
+			"Misfire":null,
+			"Effects":
+			[
+				{
+					"min":1,
+					"max":11,
+					"effectDescription":"failure",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":12,
+					"max":13,
+					"effectDescription":"The space immidiately surrounding the cleric, to a radius of 20', goes completely dark, as if all light had been extinguished. The darkness remains fixed to its location(it does not follow the cleric) and lasts for 1 turn",
+					"lost": false,
+					"worse": false,
+					"roll": null
+				},
+				{
+					"min":14,
+					"max":17,
+					"effectDescription":"The cleric can designate a point within 20’ and create a 20’-radius sphere of darkness that remains fixed at that point for a duration of 1 turn",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":18,
+					"max":19,
+					"effectDescription":"The cleric can designate a point within 100’ and create a 20’-radius sphere of darkness that remains fixed at that point for a duration of 1 turn.",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":20
+					"max":23
+					"effectDescription":"The cleric can designate a point within 100’ and create a 20’-radius sphere of darkness centered at that point. The darkness remains for a duration of 1 turn. By concentrating on future rounds, the cleric can move the sphere of darkness up to 40’ per round, beyond the original 100’ range if he so chooses",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":24
+					"max":27
+					"effectDescription":"The cleric can designate a point within 200’ and create a sphere of darkness of up to 40’ radius centered at that point. The darkness remains for a duration of 2 turns. By concentrating on future rounds, the cleric can move the sphere of darkness up to 80’ per round, beyond the original 200’ range if he so chooses.",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":28
+					"max":29
+					"effectDescription":"The cleric can extinguish sources of light. He designates a point within 200’, and a sphere of darkness up to 40’ in radius appears at that point. The cleric can move this sphere at a speed of 80’ per round. No concentration is required. The sphere lasts for 1 hour. In addition, all terrestrial sources of light within the sphere of darkness are extinguished. Torches go out, lanterns sputter and die, glowworms fade, and so on.",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":30
+					"max":31
+					"effectDescription":"With a sweep of his arm, the cleric can cast an enormous space into darkness. The cleric can choose one of three effects: a cone extending 400’ to a final width of 100’; a sphere up to 60’ radius centered at any point within 300’; or a wide line, up to 1,000’ long and 10’ wide. Within the area of effect, total darkness reigns; no light source can penetrate. In addition, all terrestrial sources of light within the sphere of darkness are extinguished. Torches go out, lanterns sputter and die, glowworms fade, and so on. However, the cleric can see through the darkness. The dark space can be moved up to 100’ per round without concentration. It lasts for up to 1 day or until dismissed",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				},
+				{
+					"min":32
+					"max":1000
+					"effectDescription":"The cleric can blot out the sun, the moon, the stars, or other sources of light. This extraordinary display of divine power requires great concentration. If this result is achieved, the cleric may continue to concentrate. All light sources that illuminate a space 500’ in all directions begin to fade. For every round the cleric concentrates, light sources fade by 1d20%. Torches still burn, but their flames seem to emit less light each round. The judge rolls each round the cleric continues to concentrate. When the total breaks 100%, all light sources have been completely extinguished, and the countryside around the cleric is completely darkened (at least to the eyes of all within 500’ – the sun still seems to shine in other kingdoms). Once all light sources are extinguished, the radius of the effect begins to expand by another 1d20’ per round of concentration. The maximum range is the cleric’s CL x 1,000’. The effect continues as long as the cleric concentrates. When concentration is broken, the light reappears at the same rate it was extinguished; e.g., if it took 7 rounds to fade, it takes 7 rounds to reach full strength again.",
+					"lost": false, 
+					"worse": false, 
+					"roll": null
+				}
+			]
+			
+			
+		},
+		{
+			"name": "Detect Evil",
+			"level": 1,
+			"range": "Range: 60’ radius from cleric or more (see below)",
+			"Duration": "6 Turns",
+			"Casting Time": "1 actionj",
+			"Save": "Will vs. spell check DC (sometimes)",
+			"IsCleric": true,
+			"General": "The cleric holds up his holy symbol and detects emanations of evil within a ray that extends straight out 5’ wide and 60’ (or more) ahead of the symbol. The definition of “evil” is based on the cleric: generally it encompasses creatures of opposed alignment, those unholy to the cleric’s deity, and those with clearly harmful intent. Depending on the strength of the spell, it may detect even more subtle dangers. This spell does not reveal creatures that are otherwise hidden but does inform the cleric that evil intentions radiate from a certain position. This spell may be reversed to detect good, which means creatures of allied alignment, common deity, or similar holy goals.",
+			"Manifestation": 
+			{
+				"Die": 3
+				"1": "evil creatures glow softly when viewed by the cleric",
+				"2": "a heavenly chorus trumpets strident tones of warning whenever the cleric views an evil creature",
+				"3": "evil creatures emit terrible, dark shadows in all directions, clouding their appearance with a deep shroud of darkness"
+			}
+			"Corruption":null,
+			"Misfire":null,
+			"Effects":
+			[
+				{
+					"min":1,
+					"max":11,
+					"effectDescription":"Failure",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":12,
+					"max":13,
+					"effectDescription":"Creatures of opposed alignment are potentially detected, as well as objects inherently dangerous in nature (such as traps and cursed weapons). Evil creatures receive a Will save vs. spell check DC to remain undetected by this spell.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":14,
+					"max":17,
+					"effectDescription":"Creatures of opposed alignment are automatically detected, as well as objects inherently dangerous in nature (such as traps and cursed weapons). Evil creatures do not receive a Will save to remain undetected",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":18,
+					"max":19,
+					"effectDescription":"To a range of 120’ in all directions from the cleric, creatures of opposed alignment are automatically detected, as well as objects inherently dangerous in nature (such as traps and cursed weapons). Evil creatures do not receive a Will save to remain undetected.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":20,
+					"max":23,
+					"effectDescription":"The cleric is immediately aware of all evil creatures and objects within 180’. In addition, evil creatures and objects shine with a faint, unearthly glow that is obvious to the cleric’s allies"
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":24,
+					"max":27,
+					"effectDescription":"The cleric is immediately aware of all evil creatures and objects within 180’. In addition, evil creatures and objects shine with a faint, unearthly glow that is obvious to the cleric’s allies. In addition, the cleric is also aware of creatures with intentions harmful to him, even if the creatures are not opposed in alignment. For example, a mindless but aggressive spider would be detected, as would a hungry bear thinking of eating the cleric.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":28,
+					"max":29,
+					"effectDescription":"The cleric is immediately aware of all evil creatures and objects within 180’. In addition, evil creatures and objects shine with a faint, unearthly glow that is obvious to the cleric’s allies. In addition, the cleric is also aware of creatures with intentions harmful to him, even if the creatures are not opposed in alignment. For example, a mindless but aggressive spider would be detected, as would a hungry bear thinking of eating the cleric. The creatures detected by this spell are pained by the light of truth, suffering a -1 penalty to all attack rolls, damage rolls, skill checks, spell checks, and saving throws while in range.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":30,
+					"max":31,
+					"effectDescription":"The cleric is immediately aware of all evil creatures and objects within 240’. In addition, evil creatures and objects shine with a faint, unearthly glow that is obvious to the cleric’s allies. In addition, the cleric is also aware of creatures with intentions harmful to him, even if the creatures are not opposed in alignment. For example, a mindless but aggressive spider would be detected, as would a hungry bear thinking of eating the cleric. The creatures detected by this spell are pained by the light of truth, suffering a -2 penalty to all attack rolls, damage rolls, skill checks, spell checks, and saving throws while in range.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+				{
+					"min":32,
+					"max":1000,
+					"effectDescription":"The cleric is immediately aware of all evil creatures and objects within 300’. In addition, evil creatures and objects shine with a faint, unearthly glow that is obvious to the cleric’s allies. In addition, the cleric is also aware of creatures with intentions harmful to him, even if the creatures are not opposed in alignment. For example, a mindless but aggressive spider would be detected, as would a hungry bear thinking of eating the cleric. The creatures detected by this spell are pained by the light of truth, suffering a -4 penalty to all attack rolls, damage rolls, skill checks, spell checks, and saving throws while in range.",
+					"lost":false,
+					"worse":false,
+					"roll":null
+				},
+			]
+			
+			
+		},
+	]
+}
