@@ -7,17 +7,16 @@
 		"Range" : "self or touch",
 		"Duration ": "1 turn or more",
 		"Casting Time" : "1 action or more", 
-		"Save": "N/A",
+		"Save": "None",
 		"IsCleric": true,
 		"General": "The cleric beseeches the blessing of his god. If bewstowed, this blessing can be a great boon to the success of his endeavors. The spell can be cast on the cleric himself, on an object, or on one of the cleric's allies. This spell is most effective on allies with the same alignment. Casting this spell on a target with a different alignment incurs a -1 penalty to the spell check, and casting the spell on a target with an opposite alignment or in alleigance to an opposed deity incurs a -2 penalty. The casting time reflects prayer and meditation as the cleric uses his holy symbol to conduct the blessing ritual. Blessings cast under auspicious circumstances receive a bonus of +1 to +4, according to the judge's discretion. Such circumstances include casting in the temple of the cleric's god, casting on a sacred holiday, or casting with the use of a holy relic. Likewise, casting under the inauspicious circumstances, such as in an unholy enemy temple, receives a penalty from -1 to -4",
 		"Manifestation":
-		{
-			"Die": 4,
-			"1": "the target glows",
-			"2": "the target is limned in a brilliant aura",
-			"3": "target manifests an angelic crown",
-			"4": "the heavenly host sings softly when the blessing is present",
-		},
+		[
+			"the target glows",
+			"the target is limned in a brilliant aura",
+			"target manifests an angelic crown",
+			"the heavenly host sings softly when the blessing is present"
+		],
 		"Corruption": null,
 		"Misfire": null,
 		"Effects": 
@@ -97,43 +96,41 @@
 		]
 		},
 		{
-			"name": "Animal Summoning",
-			"level": 1,
-			"range": "20'",
+			"Name": "Animal Summoning",
+			"Level": 1,
+			"Range": "20'",
 			"Duration": "Varies",
 			"Casting Time": "1 round",
 			"Save": "None",
 			"IsCleric": false,
 			"General": "The caster invokes animal spirits to summon forth a mundane animal. The caster must be familiar with the animal type and have some material remnant to expend in the casting the spell(e.g., hair, fur,paw,tooth,skull,etc.).",
 			"Manifestation":
-			{
-				"Die": 4,
-				"1": "an egg shimmers into existence, then hatches into the animal summoned",
-				"2": "a flash of dark clouds and the animal appears",
-				"3": "the animal's skeleton appears first, then organs appear then muscles knit them together, then skin grows, and the animal appears",
-				"4": "animal erupts from the ground fully formed"
-			},
+			[
+				"an egg shimmers into existence, then hatches into the animal summoned",
+				"a flash of dark clouds and the animal appears",
+				"the animal's skeleton appears first, then organs appear then muscles knit them together, then skin grows, and the animal appears",
+				"animal erupts from the ground fully formed"
+			],
 			"Corruption":
-			{
-				"Die": 8,
-				"1": "wizard takes on minor facial trait of the animal he attempted to summon, such as whiskers, longer ears, cat eyes, etc;",
-				"2": "wizard emits an odor which humans find strange but animals find irresistible",
-				"3": "minor corruption",
-				"4": "minor corruption",
-				"5": "minor corruption",
-				"6": "major corruption",
-				"7": "major corruption",
-				"8": "greater corruption"
+			[
 				
-			},
+				"wizard takes on minor facial trait of the animal he attempted to summon, such as whiskers, longer ears, cat eyes, etc;",
+				"wizard emits an odor which humans find strange but animals find irresistible",
+				"minor corruption",
+				"minor corruption",
+				"minor corruption",
+				"major corruption",
+				"major corruption",
+				"greater corruption"
+				
+			],
 			"Misfire":
-			{
-				"Die": 4,
-				"1": "caster inadvertently summons a swarm of aggravating insects, such as bees, wasps, or locusts",
-				"2": "instead of summoning an animal, the caster inadvertently sends one away: The caster's familiar or the next-closest mundane vanishes for 1d4 rounds only to return dirty, wet, and angry",
-				"3": "caster summons only part of an animal, causing a pile of bloody rabbit ears, severed goat horns, dislocated wolf legs, or bloody viscera to appear",
-				"4": "caster correctly summons an animal but incorrectly places it inside a nearby building or terrain feature, or on the floor/ground if there is no other nearby feature, the animal dies instantly and its body is difficult to recover now that it is fused with the object"
-			},
+			[
+				"caster inadvertently summons a swarm of aggravating insects, such as bees, wasps, or locusts",
+				"instead of summoning an animal, the caster inadvertently sends one away: The caster's familiar or the next-closest mundane vanishes for 1d4 rounds only to return dirty, wet, and angry",
+				"caster summons only part of an animal, causing a pile of bloody rabbit ears, severed goat horns, dislocated wolf legs, or bloody viscera to appear",
+				"caster correctly summons an animal but incorrectly places it inside a nearby building or terrain feature, or on the floor/ground if there is no other nearby feature, the animal dies instantly and its body is difficult to recover now that it is fused with the object"
+			],
 			"Effects":
 			[
 				{
@@ -221,22 +218,15 @@
 			
 		},
 		{
-			"name": "cantrip",
-			"level": 1,
-			"range": "up to 20' per caster level",
+			"Name": "cantrip",
+			"Level": 1,
+			"Range": "up to 20' per caster level",
 			"Duration":"varies",
 			"Casting Time": "1 action",
 			"Save": "will vs. spell check as applicable",
 			"IsCleric": false 
 			"General": "As wizards learn their craft, they practice many minor incantations that produce simple visual or auditory effects. This spell can be used to apply magical energy to many minor tasks. With the inherent risks that come from spellcasting, few wizards are so bold as to frequnetly inovce cantrips, but their avaliability is sometimes valuable. The cantrip spell can be used to enact any effect the caster pronounces at casting, within the limits of the spell, as outlined on the spell check table below.",
-			"Manifestation":
-			{
-				"Die": null
-				"1": null
-				"2": null
-				"3": null
-				"4": null 
-			},
+			"Manifestation": null,
 			"Corruption":null,
 			"Misfire":null,
 			"Effects":
@@ -294,42 +284,39 @@
 			
 		},
 		{
-			"name": "Charm Person",
-			"level": 1,
-			"range": "120'",
+			"Name": "Charm Person",
+			"Level": 1,
+			"Range": "120'",
 			"Duration": "Varies",
 			"Casting Time": "1 round",
 			"Save": "Will vs. Check",
 			"IsCleric": false,
 			"General": "The caster charms an enemy to become a friend! Any mundane living humanoid can be affected normally. Druids can also use this spell on animals. Wizards can attempt this spell on monsters and un-dead with a -2 check penalty and attempt to affect outsiders and demons with a -4 check penalty",
 			"Manifestation": 
-			{
-				"Die": 6,
-				"1": "Flash of light",
-				"2": "lulling harmony",
-				"3": "black cloud",
-				"4": "glittering pixie dust",
-				"5": "Black beam",
-				"6": "Moonbeam from above"
-			},
+			[
+				"Flash of light",
+				"lulling harmony",
+				"black cloud",
+				"glittering pixie dust",
+				"Black beam",
+				"Moonbeam from above"
+			],
 			"Corruption":
-			{
-				"Die": 6,
-				"1":"minor corruption",
-				"2":"minor corruption",
-				"3":"minor corruption",
-				"4":"major corruption",
-				"5":"major corruption",
-				"6":"greater corruption"
-			},
+			[
+				"minor corruption",
+				"minor corruption",
+				"minor corruption",
+				"major corruption",
+				"major corruption",
+				"greater corruption"
+			],
 			"Misfire":
-			{
-				"Die":4,
-				"1": "caster falls in love with intended target",
-				"2": "1d4 randomly determined nearby creatures fall in love with each other",
-				"3": "caster inadvertently puts intended target to sleep (Will save to resist)",
-				"4": "target is not charmed but instead repulsed and angered by the caster"
-			},
+			[
+				"caster falls in love with intended target",
+				"1d4 randomly determined nearby creatures fall in love with each other",
+				"caster inadvertently puts intended target to sleep (Will save to resist)",
+				"target is not charmed but instead repulsed and angered by the caster"
+			],
 			"Effects":
 			[
 				{
@@ -417,21 +404,20 @@
 			
 		},
 		{
-			"name": "Darkness",
-			"level": 1,
-			"range": "20' radius or more",
+			"Name": "Darkness",
+			"Level": 1,
+			"Range": "20' radius or more",
 			"Duration": "1 turn or more",
 			"Casting Time": "1 Action or more",
 			"Save": "N/A",
 			"IsCleric": true,
 			"General": "The cleric extinguishes the light of the sun, demonstrating the great power of his deity. From a distance, the darkness appears to be a space of deepest night; no light wil penetrate it. Creatures wthin are blinded",
 			"Manifestation": 
-			{
-				"Die": 3,
-				"1": "shadowy cloud of darkness",
-				"2": "absolute blackness",
-				"3": "thick oily black mist",
-			}
+			[
+				"shadowy cloud of darkness",
+				"absolute blackness",
+				"thick oily black mist",
+			]
 			"Corruption":null
 			"Misfire":null,
 			"Effects":
@@ -513,21 +499,20 @@
 			
 		},
 		{
-			"name": "Detect Evil",
-			"level": 1,
-			"range": "Range: 60’ radius from cleric or more (see below)",
+			"Name": "Detect Evil",
+			"Level": 1,
+			"Range": "Range: 60’ radius from cleric or more (see below)",
 			"Duration": "6 Turns",
 			"Casting Time": "1 actionj",
 			"Save": "Will vs. spell check DC (sometimes)",
 			"IsCleric": true,
 			"General": "The cleric holds up his holy symbol and detects emanations of evil within a ray that extends straight out 5’ wide and 60’ (or more) ahead of the symbol. The definition of “evil” is based on the cleric: generally it encompasses creatures of opposed alignment, those unholy to the cleric’s deity, and those with clearly harmful intent. Depending on the strength of the spell, it may detect even more subtle dangers. This spell does not reveal creatures that are otherwise hidden but does inform the cleric that evil intentions radiate from a certain position. This spell may be reversed to detect good, which means creatures of allied alignment, common deity, or similar holy goals.",
 			"Manifestation": 
-			{
-				"Die": 3
-				"1": "evil creatures glow softly when viewed by the cleric",
-				"2": "a heavenly chorus trumpets strident tones of warning whenever the cleric views an evil creature",
-				"3": "evil creatures emit terrible, dark shadows in all directions, clouding their appearance with a deep shroud of darkness"
-			}
+			[
+				"evil creatures glow softly when viewed by the cleric",
+				"a heavenly chorus trumpets strident tones of warning whenever the cleric views an evil creature",
+				"evil creatures emit terrible, dark shadows in all directions, clouding their appearance with a deep shroud of darkness"
+			]
 			"Corruption":null,
 			"Misfire":null,
 			"Effects":
